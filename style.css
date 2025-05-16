@@ -1,0 +1,89 @@
+:root{
+    --primary: aquamarine;
+}
+body {
+    font: 16/28px;
+    font-family: poppins;
+    color: #333;
+}
+.container {
+    margin: auto;
+    background-color: #fff;
+}
+/*bagian header*/
+.header {
+    padding: 0.5rem;
+}
+.header .judul {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.header .judul span {
+    color: var(--primary);
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+}
+.header a:hover {
+    color: var(--primary);
+}
+.header a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+}
+.header a:hover::after {
+    transform: scaleX(0.7); /*panjang border*/
+    transition: 0.4s linear;
+}
+/*batas bagian header*/
+
+/*bagian banner*/
+.banner {
+    height: 450px;
+    background-image: url(./images/buah.jpg);
+    background-size: cover;
+    background-position: 0, -180px;
+    border-bottom: 3px solid var(--primary);
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.content .subjudul {
+    border-bottom: solid 3px var(--primary);
+    width: max-content;
+}
+.content .penulis {
+    font-size: 12px;
+    margin-top: -2px;
+}
+.content .penulis a {
+    color: orange;
+    text-decoration: none;
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+.footer {
+    background-color: #333;
+    padding: 15px;
+}
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 15px;
+}
